@@ -19,6 +19,14 @@ app.use("/game", game);
 app.use("/review", review);
 app.use("/admin", admin);
 
+
+app.get("/ping", (req, res) => {
+  res.status(200).json({
+    response: "Welcome to Gameflix Server",
+  });
+});
+
+
 app.get("/ping", (req, res) => {
   res.status(200).json({
     response: "PONG",
