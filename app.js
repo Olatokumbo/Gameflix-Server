@@ -8,7 +8,7 @@ const review = require("./routes/review");
 const admin = require("./routes/admin");
 require("dotenv").config();
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
