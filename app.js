@@ -20,7 +20,7 @@ app.use("/review", review);
 app.use("/admin", admin);
 
 
-app.get("/ping", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({
     response: "Welcome to Gameflix Server",
   });
