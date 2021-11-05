@@ -89,8 +89,8 @@ const uploadImage = async (req, res) => {
 
   newGame.save().then((game) => {
     res.status(200).json(game);
-    const pathToDir = path.join(__dirname, "..", "uploads");
-    removeDir(pathToDir);
+    //const pathToDir = path.join(__dirname, "..", "uploads");
+    //removeDir(pathToDir);
   });
 };
 
